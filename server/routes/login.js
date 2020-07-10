@@ -41,7 +41,8 @@ app.post('/login', (req, res) => {
         res.json({
             ok: true,
             usuario: usuarioDB,
-            token //: token como son iguales los nombres se elimina esta redundancia, ECM6
+            token, //: token como son iguales los nombres se elimina esta redundancia, ECM6
+            alejandro: 'Probando cambio para heroku'
 
             //para verificar el token resultante se puede ir a https://jwt.io/
 
