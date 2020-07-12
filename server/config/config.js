@@ -36,3 +36,10 @@ if (process.env.NODE_ENV === 'dev') {
 }
 
 process.env.urlDB = urlDB;
+
+
+//================================
+// Google Client ID
+// ===============================
+process.env.CLIENT_ID = process.env.CLIENT_ID || '943475747563-24397tpsgrl50d0ivt6gpitca11uq36a.apps.googleusercontent.com';
+// esto es porque desde Herokuu puedo cammbiarlo. El client id es el que me dio Google para esta app
