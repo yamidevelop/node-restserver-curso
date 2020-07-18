@@ -83,7 +83,7 @@ app.get('/productos/buscar/:termino', verificaToken, (req, res) => {
 
     let termino = req.params.termino;
 
-    let regex = new RegExp(termino, 'i');
+    let regex = new RegExp(termino, 'i'); //'i' significa que sea insensible a mayusculas y minusculas. Es similar a sql campo like '%vino%'
 
     Producto.find({ nombre: regex })
         .populate('categoria', 'nombre')
